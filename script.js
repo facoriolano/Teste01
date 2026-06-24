@@ -917,7 +917,8 @@ function mapCSVToQuestions(csvRows) {
 
 // Carregar Banco de Questões do Google Sheets
 async function loadQuestionsFromSheet() {
-  const sheetUrl = 'https://docs.google.com/spreadsheets/d/1SY4ULuaQnvgEfGqaHduZ_1BwjtFpqXLl04wOUN4BssY/gviz/tq?tqx=out:csv';
+  // URL ofuscada em Base64 para proteção de acesso dos alunos
+  const sheetUrl = atob("aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvMVNZNFVMdWFRbnZnRWZHcWFIZHVaXzFCd2p0RnBxWExsMDR3T1VONEJzc1kvZ3Zpei90cT90cXg9b3V0OmNzdg==");
   try {
     const response = await fetch(sheetUrl);
     if (!response.ok) throw new Error('Falha no fetch');

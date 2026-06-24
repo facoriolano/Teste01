@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulado Duolingo</title>
+  <title>Crisma 26 - Simulado</title>
   <!-- Tailwind CSS via CDN para compatibilidade rápida -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
@@ -22,42 +22,48 @@
     <!-- Tela de Carregamento / Boas-Vindas -->
     <div id="welcome-screen" class="flex-1 flex flex-col justify-between p-6 overflow-y-auto">
       <div class="flex-col items-center text-center mt-6">
-        <h1 class="text-3xl font-extrabold tracking-tight text-[#58cc02] mb-1">Duolingo</h1>
-        <p class="text-xl font-bold text-[#3c3c3c] mb-6">Simulado de Prova</p>
+        <h1 class="text-3xl font-extrabold tracking-tight text-amber-500 mb-1 flex items-center justify-center gap-1">
+          <span>🕊️</span> Crisma 26
+        </h1>
+        <p class="text-xl font-bold text-[#3c3c3c] mb-6">Simulado de Crisma</p>
         
-        <!-- Mascote Coruja Svg -->
+        <!-- Mascote Papa João Paulo II Svg -->
         <div class="w-40 h-40 mx-auto my-4 flex items-center justify-center" id="mascot-container">
-          <!-- Svg Coruja -->
           <svg viewBox="0 0 100 100" class="w-full h-full">
-            <!-- Pés -->
-            <ellipse cx="40" cy="85" rx="7" ry="4" fill="#ff9600" />
-            <ellipse cx="60" cy="85" rx="7" ry="4" fill="#ff9600" />
-            <!-- Corpo principal -->
-            <rect x="25" y="25" width="50" height="58" rx="25" fill="#58cc02" />
-            <!-- Barriga -->
-            <path d="M 30,55 Q 50,45 70,55 Q 50,83 30,55 Z" fill="#ffffff" opacity="0.9" />
-            <!-- Manchas na barriga -->
-            <path d="M 42,60 L 46,65 L 50,60" stroke="#58cc02" stroke-width="2.5" fill="none" stroke-linecap="round" />
-            <path d="M 50,60 L 54,65 L 58,60" stroke="#58cc02" stroke-width="2.5" fill="none" stroke-linecap="round" />
-            <path d="M 46,70 L 50,75 L 54,70" stroke="#58cc02" stroke-width="2.5" fill="none" stroke-linecap="round" />
-            <!-- Olhos brancos -->
-            <circle cx="38" cy="45" r="13" fill="#ffffff" />
-            <circle cx="62" cy="45" r="13" fill="#ffffff" />
-            <!-- Olhos pupilas -->
-            <circle cx="38" cy="45" r="5" fill="#3c3c3c" id="pupil-l" />
-            <circle cx="62" cy="45" r="5" fill="#3c3c3c" id="pupil-r" />
-            <!-- Bico -->
-            <polygon points="50,48 45,56 55,56" fill="#ff9600" />
-            <!-- Asas -->
-            <path d="M 25,45 Q 16,55 25,68 Z" fill="#46a302" />
-            <path d="M 75,45 Q 84,55 75,68 Z" fill="#46a302" id="wing-r" />
+            <!-- Batina / Sutana Branca -->
+            <path d="M 24,84 L 30,46 Q 50,41 70,46 L 76,84 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+            <!-- Estola Peitoral Dourada -->
+            <path d="M 35,46 L 37,74 L 43,74 L 43,46 Z M 57,46 L 57,74 L 63,74 L 65,46 Z" fill="#ffd700" opacity="0.9" />
+            <path d="M 37,74 H 43 M 57,74 H 63" stroke="#d97706" stroke-width="1.5" />
+            <!-- Corrente e Cruz Peitoral -->
+            <path d="M 42,46 Q 50,54 58,46" fill="none" stroke="#ffd700" stroke-width="1.5" />
+            <path d="M 46,57 H 54 M 50,53 V 63" stroke="#d97706" stroke-width="3.5" stroke-linecap="round" />
+            <!-- Cabeça / Rosto -->
+            <circle cx="50" cy="34" r="17" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
+            <!-- Cabelo Branco -->
+            <path d="M 32,32 Q 28,19 41,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <path d="M 68,32 Q 72,19 59,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <!-- Solidéu -->
+            <path d="M 40,18 Q 50,11 60,18 Z" fill="#ffffff" stroke="#ebd5c4" stroke-width="1.2" />
+            <!-- Óculos -->
+            <circle cx="43" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.85" />
+            <circle cx="57" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.85" />
+            <line x1="47.5" y1="32" x2="52.5" y2="32" stroke="#d97706" stroke-width="1.5" opacity="0.85" />
+            <!-- Olhos Amigáveis -->
+            <circle cx="43" cy="32" r="2.5" fill="#1e293b" />
+            <circle cx="57" cy="32" r="2.5" fill="#1e293b" />
+            <!-- Sorriso -->
+            <path d="M 46,42 Q 50,46 54,42" stroke="#e11d48" stroke-width="2" fill="none" stroke-linecap="round" />
+            <!-- Mãos em Prece -->
+            <path d="M 46,74 Q 50,65 54,74 Z" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="1" />
+            <line x1="50" y1="67" x2="50" y2="73" stroke="#ebd5c4" stroke-width="1.2" />
           </svg>
         </div>
 
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-left max-w-sm mx-auto mb-6">
-          <h3 class="font-bold text-sm text-[#3c3c3c] mb-1">Fonte de Dados:</h3>
-          <p class="text-xs text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap" id="sheet-url-text">
-            https://docs.google.com/spreadsheets/d/1SY4ULuaQnvgEfGqaHduZ_1BwjtFpqXLl04wOUN4BssY/edit?usp=sharing
+          <h3 class="font-bold text-sm text-[#3c3c3c] mb-1">Conexão do Simulado:</h3>
+          <p class="text-xs text-gray-500 flex items-center gap-1 justify-start font-medium" id="sheet-url-text">
+            <span>🛡️</span> Conectado de forma segura e protegida
           </p>
           <div class="mt-2 flex items-center justify-between">
             <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800" id="data-source-badge">
@@ -72,14 +78,14 @@
 
       <div class="flex flex-col gap-3">
         <!-- Modo Exame com vidas -->
-        <button id="btn-exam" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-lg rounded-2xl border-b-4 border-[#46a302] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all flex items-center justify-center gap-2">
+        <button id="btn-exam" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-lg rounded-2xl border-b-4 border-[#46a302] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all flex items-center justify-center gap-2 cursor-pointer">
           <span>🎮</span> MODO EXAME (5 VIDAS)
         </button>
         <!-- Modo Prática livre -->
-        <button id="btn-practice" class="w-full py-4 px-6 bg-[#1cb0f6] text-white font-extrabold text-lg rounded-2xl border-b-4 border-[#1899d6] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all flex items-center justify-center gap-2">
+        <button id="btn-practice" class="w-full py-4 px-6 bg-[#1cb0f6] text-white font-extrabold text-lg rounded-2xl border-b-4 border-[#1899d6] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all flex items-center justify-center gap-2 cursor-pointer">
           <span>📖</span> MODO TREINO LIVRE
         </button>
-        <p class="text-center text-xs text-gray-400 mt-2">Inspirado no Duolingo para fins pedagógicos</p>
+        <p class="text-center text-xs text-gray-400 mt-2">Inspirado para fins pedagógicos de Crisma</p>
       </div>
     </div>
 
@@ -88,15 +94,15 @@
       <!-- Cabeçalho (Barra de progresso, vidas, score) -->
       <div class="p-4 border-b border-gray-150 flex items-center justify-between gap-4 bg-white z-10">
         <!-- Botão Sair -->
-        <button id="btn-quit" class="text-gray-400 hover:text-gray-600 p-1">
+        <button id="btn-quit" class="text-gray-400 hover:text-gray-600 p-1 cursor-pointer">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
 
-        <!-- Barra de Progresso com corujinha -->
+        <!-- Barra de Progresso -->
         <div class="flex-1 h-4 bg-gray-100 rounded-full relative overflow-visible">
-          <div id="progress-bar" class="h-full bg-[#58cc02] rounded-full transition-all duration-300" style="width: 0%"></div>
+          <div id="progress-bar" class="h-full bg-amber-400 rounded-full transition-all duration-300" style="width: 0%"></div>
         </div>
 
         <!-- Indicador de Vidas (Coragem/Hearts) -->
@@ -107,18 +113,28 @@
 
       <!-- Área da Questão -->
       <div class="flex-1 p-5 overflow-y-auto flex flex-col justify-start">
-        <!-- Balão de Fala do Duo -->
+        <!-- Balão de Fala do Papa -->
         <div class="flex gap-3 items-start mb-6">
           <div class="w-14 h-14 flex-shrink-0">
-            <!-- Pequeno Duo no balão -->
+            <!-- Pequeno Papa no balão -->
             <svg viewBox="0 0 100 100" class="w-full h-full">
-              <rect x="25" y="25" width="50" height="58" rx="25" fill="#58cc02" />
-              <path d="M 30,55 Q 50,45 70,55 Q 50,83 30,55 Z" fill="#ffffff" opacity="0.9" />
-              <circle cx="38" cy="45" r="13" fill="#ffffff" />
-              <circle cx="62" cy="45" r="13" fill="#ffffff" />
-              <circle cx="38" cy="45" r="5" fill="#3c3c3c" />
-              <circle cx="62" cy="45" r="5" fill="#3c3c3c" />
-              <polygon points="50,48 45,56 55,56" fill="#ff9600" />
+              <!-- Batina -->
+              <path d="M 25,84 L 30,46 Q 50,41 70,46 L 75,84 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+              <!-- Cabeça -->
+              <circle cx="50" cy="34" r="17" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
+              <!-- Cabelo -->
+              <path d="M 32,32 Q 28,19 41,18" stroke="#f1f5f9" stroke-width="4" stroke-linecap="round" fill="none" />
+              <path d="M 68,32 Q 72,19 59,18" stroke="#f1f5f9" stroke-width="4" stroke-linecap="round" fill="none" />
+              <!-- Solidéu -->
+              <path d="M 40,18 Q 50,11 60,18 Z" fill="#ffffff" stroke="#ebd5c4" stroke-width="1" />
+              <!-- Óculos -->
+              <circle cx="43" cy="32" r="4" fill="none" stroke="#d97706" stroke-width="1.2" />
+              <circle cx="57" cy="32" r="4" fill="none" stroke="#d97706" stroke-width="1.2" />
+              <!-- Olhos -->
+              <circle cx="43" cy="32" r="2" fill="#1e293b" />
+              <circle cx="57" cy="32" r="2" fill="#1e293b" />
+              <!-- Sorriso -->
+              <path d="M 46,42 Q 50,46 54,42" stroke="#e11d48" stroke-width="1.8" fill="none" stroke-linecap="round" />
             </svg>
           </div>
           <!-- Balão -->
@@ -147,7 +163,7 @@
             <p id="feedback-text" class="text-sm text-gray-600 mt-0.5">Resposta certa.</p>
           </div>
         </div>
-        <button id="btn-action" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#46a302] active:border-b-0 active:translate-y-[4px] hover:brightness-105 transition-all text-center">
+        <button id="btn-action" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#46a302] active:border-b-0 active:translate-y-[4px] hover:brightness-105 transition-all text-center cursor-pointer">
           CONTINUAR
         </button>
       </div>
@@ -163,26 +179,36 @@
     <!-- Tela de Fim de Jogo (Game Over) -->
     <div id="gameover-screen" class="hidden flex-1 flex flex-col justify-between p-6 text-center overflow-y-auto">
       <div class="my-auto">
-        <!-- Ícone Triste ou Duo Triste -->
+        <!-- Ícone Triste Pope -->
         <div class="w-40 h-40 mx-auto mb-6">
           <svg viewBox="0 0 100 100" class="w-full h-full">
-            <rect x="25" y="25" width="50" height="58" rx="25" fill="#58cc02" />
-            <path d="M 30,55 Q 50,45 70,55 Q 50,83 30,55 Z" fill="#ffffff" opacity="0.9" />
-            <!-- Olhos tristes (cruzes ou piscando caídos) -->
-            <path d="M 32,48 L 44,42" stroke="#4a5568" stroke-width="3" stroke-linecap="round" />
-            <path d="M 32,42 L 44,48" stroke="#4a5568" stroke-width="3" stroke-linecap="round" />
-            <path d="M 56,48 L 68,42" stroke="#4a5568" stroke-width="3" stroke-linecap="round" />
-            <path d="M 56,42 L 68,48" stroke="#4a5568" stroke-width="3" stroke-linecap="round" />
-            <!-- Bico triste/aberto -->
-            <polygon points="50,50 46,58 54,58" fill="#ff9600" />
-            <!-- Lágrima -->
-            <ellipse cx="38" cy="56" rx="3" ry="5" fill="#3b82f6" />
+            <!-- Batina -->
+            <path d="M 24,84 L 30,46 Q 50,41 70,46 L 76,84 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+            <!-- Estola Peitoral Dourada -->
+            <path d="M 35,46 L 37,74 L 43,74 L 43,46 Z M 57,46 L 57,74 L 63,74 L 65,46 Z" fill="#ffd700" opacity="0.9" />
+            <!-- Cabeça -->
+            <circle cx="50" cy="34" r="17" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
+            <!-- Cabelo -->
+            <path d="M 32,32 Q 28,19 41,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <path d="M 68,32 Q 72,19 59,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <!-- Solidéu -->
+            <path d="M 40,18 Q 50,11 60,18 Z" fill="#ffffff" stroke="#ebd5c4" stroke-width="1.2" />
+            <!-- Óculos -->
+            <circle cx="43" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <circle cx="57" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <!-- Olhos Tristes/Compassivos Fechados -->
+            <path d="M 39,33 Q 43,36 47,33" stroke="#475569" stroke-width="2" fill="none" stroke-linecap="round" />
+            <path d="M 53,33 Q 57,36 61,33" stroke="#475569" stroke-width="2" fill="none" stroke-linecap="round" />
+            <!-- Sorriso de encorajamento suave -->
+            <path d="M 46,43 Q 50,45 54,43" stroke="#e11d48" stroke-width="1.5" fill="none" stroke-linecap="round" />
+            <!-- Mãos em prece -->
+            <path d="M 46,74 Q 50,65 54,74 Z" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="1" />
           </svg>
         </div>
         <h2 class="text-3xl font-black text-[#ff4b4b] mb-2">Vidas Esgotadas!</h2>
         <p class="text-gray-500 font-medium max-w-xs mx-auto">Não desista! Errar faz parte do aprendizado. Tente novamente para fixar o conteúdo.</p>
       </div>
-      <button id="btn-retry" class="w-full py-4 px-6 bg-[#ff4b4b] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#ea2b2b] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all">
+      <button id="btn-retry" class="w-full py-4 px-6 bg-[#ff4b4b] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#ea2b2b] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all cursor-pointer">
         RECOMEÇAR SIMULADO
       </button>
     </div>
@@ -190,20 +216,33 @@
     <!-- Tela de Conclusão / Celebração -->
     <div id="success-screen" class="hidden flex-1 flex flex-col justify-between p-6 overflow-y-auto">
       <div class="text-center my-auto">
-        <!-- Svg Duo Celebrando -->
+        <!-- Svg Pope Celebrando -->
         <div class="w-36 h-36 mx-auto mb-4">
           <svg viewBox="0 0 100 100" class="w-full h-full">
-            <rect x="25" y="25" width="50" height="58" rx="25" fill="#58cc02" />
-            <!-- Capa dourada -->
-            <path d="M 23,45 L 15,75 L 35,80 Z" fill="#ffc800" />
-            <path d="M 77,45 L 85,75 L 65,80 Z" fill="#ffc800" />
-            <path d="M 30,55 Q 50,45 70,55 Q 50,83 30,55 Z" fill="#ffffff" opacity="0.9" />
-            <!-- Olhos alegres (arcos ^^) -->
-            <path d="M 30,46 Q 38,36 46,46" stroke="#3c3c3c" stroke-width="4.5" fill="none" stroke-linecap="round" />
-            <path d="M 54,46 Q 62,36 70,46" stroke="#3c3c3c" stroke-width="4.5" fill="none" stroke-linecap="round" />
-            <polygon points="50,45 45,53 55,53" fill="#ff9600" />
-            <!-- Coroa ou óculos -->
-            <polygon points="40,25 45,15 50,22 55,15 60,25" fill="#ffc800" stroke="#d9a400" stroke-width="1" />
+            <!-- Halo de Luz -->
+            <ellipse cx="50" cy="11" rx="20" ry="4" fill="none" stroke="#ffc800" stroke-width="3" />
+            <!-- Batina branca -->
+            <path d="M 24,84 L 30,46 Q 50,41 70,46 L 76,84 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+            <!-- Estola / Capa Vermelha Festiva -->
+            <path d="M 28,46 L 22,65 Q 50,70 78,65 L 72,46 Q 50,42 28,46 Z" fill="#ff4b4b" stroke="#ffd700" stroke-width="1.5" />
+            <!-- Cabeça -->
+            <circle cx="50" cy="34" r="17" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
+            <!-- Cabelo -->
+            <path d="M 32,32 Q 28,19 41,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <path d="M 68,32 Q 72,19 59,18" stroke="#f1f5f9" stroke-width="5" stroke-linecap="round" fill="none" />
+            <!-- Solidéu -->
+            <path d="M 40,18 Q 50,11 60,18 Z" fill="#ffffff" stroke="#ebd5c4" stroke-width="1.2" />
+            <!-- Óculos -->
+            <circle cx="43" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <circle cx="57" cy="32" r="4.5" fill="none" stroke="#d97706" stroke-width="1.5" />
+            <!-- Olhos de Felicidade ^^ -->
+            <path d="M 39,32 Q 43,28 47,32" stroke="#334155" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <path d="M 53,32 Q 57,28 61,32" stroke="#334155" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <!-- Grande Sorriso -->
+            <path d="M 45,41 Q 50,46 55,41" stroke="#e11d48" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <!-- Mãos erguidas em bênção -->
+            <circle cx="22" cy="52" r="4.5" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
+            <circle cx="78" cy="52" r="4.5" fill="#fdf2e9" stroke="#ebd5c4" stroke-width="0.5" />
           </svg>
         </div>
         
@@ -240,10 +279,10 @@
       </div>
 
       <div class="flex flex-col gap-3">
-        <button id="btn-show-review" class="w-full py-4 px-6 bg-white border-2 border-gray-200 text-[#3c3c3c] font-extrabold text-base rounded-2xl hover:bg-gray-50 active:translate-y-[2px] transition-all">
+        <button id="btn-show-review" class="w-full py-4 px-6 bg-white border-2 border-gray-200 text-[#3c3c3c] font-extrabold text-base rounded-2xl hover:bg-gray-50 active:translate-y-[2px] transition-all cursor-pointer">
           🔍 REVISAR RESPOSTAS
         </button>
-        <button id="btn-finish" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#46a302] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all">
+        <button id="btn-finish" class="w-full py-4 px-6 bg-[#58cc02] text-white font-extrabold text-base rounded-2xl border-b-4 border-[#46a302] hover:brightness-105 active:border-b-0 active:translate-y-[4px] transition-all cursor-pointer">
           VOLTAR AO INÍCIO
         </button>
       </div>
@@ -254,7 +293,7 @@
       <!-- Cabeçalho da Revisão -->
       <div class="p-4 border-b border-gray-150 flex items-center justify-between bg-white">
         <h3 class="font-black text-lg text-[#3c3c3c]">Revisão da Prova</h3>
-        <button id="btn-close-review" class="text-gray-400 hover:text-gray-600 font-extrabold text-sm">
+        <button id="btn-close-review" class="text-gray-400 hover:text-gray-600 font-extrabold text-sm cursor-pointer">
           FECHAR
         </button>
       </div>
