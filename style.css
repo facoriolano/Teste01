@@ -1,0 +1,58 @@
+/* Customisations to complement Tailwind CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f7f9;
+}
+
+/* Satisfying 3D button classes */
+.btn-duo-green {
+  background-color: #58cc02;
+  border-bottom: 4px solid #46a302;
+  color: white;
+}
+.btn-duo-green:active {
+  border-bottom-width: 0;
+  transform: translateY(4px);
+}
+
+.btn-duo-blue {
+  background-color: #1cb0f6;
+  border-bottom: 4px solid #1899d6;
+  color: white;
+}
+.btn-duo-blue:active {
+  border-bottom-width: 0;
+  transform: translateY(4px);
+}
+
+.btn-duo-red {
+  background-color: #ff4b4b;
+  border-bottom: 4px solid #ea2b2b;
+  color: white;
+}
+.btn-duo-red:active {
+  border-bottom-width: 0;
+  transform: translateY(4px);
+}
+
+/* Custom shadow animations */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out 2;
+}
+
+@keyframes pulse-heart {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.animate-heart-pulse {
+  animation: pulse-heart 0.8s ease-in-out infinite;
+}
